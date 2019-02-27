@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#sidebar.active {
+    left: 20px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    
+    background:linear-gradient( rgb(2, 80, 126),#4F65A7,#2498A7);
+    border-radius: 10px;
+    left: -260px;
+    top: 10px;
+    padding-bottom: 10px;
+
+    transition: all 600ms;
+}
+
+#sidebar ul li:first-child {
+    text-align: center;
+    color: white;
+    font-size: 1.95em;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+}
+
+#sidebar ul li:not(:first-child) {
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    color: aquamarine
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background: #e4dede;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background: #666;
+    margin: 4px 0;
+}
+
+#sidebar .toggle-btn:hover {
+    background: #556279;
+
+}
+
+#sidebar .toggle-btn:hover span {
+    background: #fafafa;
+}
+
+#video-bg {
+    position: fixed;
+    width: 100%;
+}
+
+#video-bg video {
+    height: 100vh;
+    object-fit: fill;
+    display: block;
+}
